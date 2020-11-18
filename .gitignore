@@ -2,7 +2,9 @@
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
+/.vs
 /.vs/DelegateFuncAction/v16
+/Delegate/bin
 /Delegate/bin/Debug/netcoreapp3.1
 /Delegate/obj
 /.vs/DelegateFuncAction/DesignTimeBuild
