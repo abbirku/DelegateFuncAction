@@ -8,3 +8,5 @@
 /Delegate/bin/Debug/netcoreapp3.1
 /Delegate/obj
 /.vs/DelegateFuncAction/DesignTimeBuild
+/DelegateFunc/obj
+/DelegateFunc/bin/Debug/netcoreapp3.1
