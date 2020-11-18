@@ -23,7 +23,7 @@ namespace Delegate
         public string ToString(PersonFormat formatter)
         {
             if(formatter == null)
-                return this.ToString();
+                return ToString();
 
             return formatter(this);
         }
