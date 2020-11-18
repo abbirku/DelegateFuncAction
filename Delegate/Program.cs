@@ -6,7 +6,17 @@ namespace Delegate
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var formatter = new Formatter();
+            var person = new Person
+            { 
+                FirstName = "Shams",
+                LastName = "Wadud"
+            };
+
+            Console.WriteLine(person.ToString(formatter.FormatFirstName));
+            Console.WriteLine(person.ToString(formatter.FormatLastName));
+            Console.WriteLine(person.ToString(formatter.FormatFullName));
+            Console.WriteLine(person.ToString(formatter.FormatEmployeeInfo, "He works at SolutionArt."));
         }
     }
 }
