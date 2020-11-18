@@ -16,6 +16,7 @@ namespace Delegate
             Console.WriteLine(person.ToString(formatter.FormatFirstName));
             Console.WriteLine(person.ToString(formatter.FormatLastName));
             Console.WriteLine(person.ToString(formatter.FormatFullName));
+            Console.WriteLine(person.ToString(formatter.FormatEmployeeInfo, "He works at SolutionArt."));
         }
     }
 }

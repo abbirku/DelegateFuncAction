@@ -5,6 +5,7 @@ using System.Text;
 namespace Delegate
 {
     public delegate string PersonFormat(Person person);
+    public delegate string EmployeeFormat(Person person, string info);
 
     public class Person
     {
@@ -26,6 +27,14 @@ namespace Delegate
                 return ToString();
 
             return formatter(this);
+        }
+
+        public string ToString(EmployeeFormat formatter, string info)
+        {
+            if (formatter == null)
+                return ToString();
+
+            return formatter(this, info);
         }
     }
 }

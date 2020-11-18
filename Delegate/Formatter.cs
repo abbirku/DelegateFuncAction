@@ -20,5 +20,10 @@ namespace Delegate
         {
             return $"Person full name is {person.FirstName} {person.LastName}";
         }
+
+        public string FormatEmployeeInfo(Person person, string info)
+        {
+            return $"{FormatFullName(person)}. {info}";
+        }
     }
 }
